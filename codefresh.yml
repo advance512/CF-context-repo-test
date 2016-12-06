@@ -13,6 +13,9 @@ steps:
   push_service_1:
     type: push
     candidate: ${{build_first_service}}
+    credentials:
+      username: olsynt
+      password: izumrud88
   spin-up:
     type: launch-composition
     composition:

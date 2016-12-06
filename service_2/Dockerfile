@@ -1,3 +1,1 @@
-FROM node
-
-CMD ['echo', 'hello from service 2']
+FROM hello-world

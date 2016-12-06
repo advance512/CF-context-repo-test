@@ -8,7 +8,7 @@ steps:
   unit_test_service_1:
     image: ${{build_first_service}}
     commands:
-      - 'echo hello world'
+      - env
   build_second_service:
     type: build
     working_directory: ${{main_clone}}/service_2

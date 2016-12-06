@@ -10,13 +10,7 @@ steps:
     working_directory: ${{main_clone}}/service_2
     dockerfile: Dockerfile
     image_name: service_2
-  push_service_1:
-    type: push
-    candidate: ${{build_first_service}}
-    credentials:
-      username: olsynt
-      password: izumrud88
-  spin-up:
+  spin_up:
     type: launch-composition
     composition:
       version: '2'

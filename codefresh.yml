@@ -2,11 +2,11 @@ version: '1.0'
 steps:
   build-first-service:
     type: build
-    working-directory: ${{main_clone}}
+    working-directory: ${{main_clone}}/service_1
     dockerfile: Dockerfile
     image_name: service_1
   build-second-service:
     type: build
-    working-directory: ${{main_clone}}
+    working-directory: ${{main_clone}}/service_2
     dockerfile: Dockerfile
     image_name: service_2

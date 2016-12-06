@@ -10,3 +10,12 @@ steps:
     working_directory: ${{main_clone}}/service_2
     dockerfile: Dockerfile
     image_name: service_2
+  spin-up:
+    type: launch-composition
+    composition:
+      version: '2'
+      services:
+        service_1:
+          image: ${{build_first_service}}
+        service_2:
+          image: ${{build_second_service}}

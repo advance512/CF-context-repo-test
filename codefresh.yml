@@ -4,7 +4,7 @@ steps:
     type: build
     working-directory: ${{main_clone}}/service_1
     dockerfile: Dockerfile
-    imagre_name: service_1
+    image_name: service_1
   build-second-service:
     type: build
     working-directory: ${{main_clone}}/service_2

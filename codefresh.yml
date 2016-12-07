@@ -7,12 +7,8 @@ steps:
     image_name: service_1
   unit_test_service_1:
     image: ${{build_first_service}}
-    woking_directory: /codefresh/volume/
     commands:
-      - env
-      - 'echo hello world'
-      - 'echo $PWD'
-      - ls /codefresh/volume
+      - ls
   build_second_service:
     type: build
     working_directory: ${{main_clone}}/service_2

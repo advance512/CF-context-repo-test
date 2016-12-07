@@ -11,6 +11,7 @@ steps:
       - env
       - 'echo hello world'
       - 'echo $PWD'
+      - ls
   build_second_service:
     type: build
     working_directory: ${{main_clone}}/service_2

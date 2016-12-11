@@ -1,2 +1,4 @@
 
 FROM ubuntu
+
+RUN ls

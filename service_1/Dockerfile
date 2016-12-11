@@ -1,4 +1,4 @@
 
 FROM ubuntu
 
-RUN ls
+RUN ls -la

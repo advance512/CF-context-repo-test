@@ -1,0 +1,14 @@
+version: '1.0'
+
+steps:
+  auto-gen:
+   image: credimi/sbt-builder-image:latest
+   working-directory: ${{initial-clone}}
+   entry-point:
+        - "sbt"
+        - "-Dsbt.ivy.home=/volume/codefresh/.ivy2"
+        - "-mem"
+        - "4096"
+        - "clean"
+        - "compile"
+        - "pack"
